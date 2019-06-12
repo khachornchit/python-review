@@ -1,3 +1,7 @@
-[www.plutosols.com](http://www.plutosols.com/)
+# Python Quick Start
+Version 2.7
 
-![Pluto Solutions](https://github.com/plutosolutions/plutoSolutions-common/blob/master/python/Python%20quick%20start.PNG)
+# Procedure
+* git clone
+* try to run command > python hello.py
+* try to run command > python standardplot.py
