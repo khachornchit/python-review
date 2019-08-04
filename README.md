@@ -1,7 +1,10 @@
-# Python Quick Start
-Version 2.7
+# Version
+Python 3.7.3
 
-# Procedure
-* git clone
-* try to run command > python hello.py
-* try to run command > python standardplot.py
+# Hello World
+* git clone https://github.com/Khachornchit/Python-Quick-Start.git
+* python3 start/hello.py
+
+# Standard Plot Test
+* sudo pip3 install matplotlib
+* python3 start/standardplot.py
