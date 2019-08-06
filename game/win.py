@@ -1,4 +1,4 @@
-game = [[2, 1, 1],
+game = [[2, 1, 2],
         [2, 1, 2],
         [1, 2, 2],]
 
@@ -40,8 +40,6 @@ def win_by_col():
 def win_by_diagonal():
         row = 0
         col = 0
-        win_diagonal_forward = False
-        
         for index in range(len(game)):
                 win_forward = True
                 if index == 0:
