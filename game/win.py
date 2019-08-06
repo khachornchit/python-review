@@ -1,6 +1,6 @@
-game = [[2, 2, 2],
-        [2, 2, 2],
-        [2, 2, 2],]
+game = [[2, 1, 1],
+        [2, 1, 2],
+        [1, 2, 2],]
 
 def get_winner():   
         win_by_row()
@@ -47,15 +47,23 @@ def win_by_diagonal():
                 if index == 0:
                         value = game[row][col]
                 else:
-                        if value != game[row][col]:
+                        if value != game[row+index][col+index]:
                                 win_forward = False
                                 break
         if win_forward == True:
                 print("Diagonal forward is the Winner !")
-                
+
         row = 0
-        col = 2
-        if game[row][col] == game[row+1][col-1] == game[row+2][col-2]:
+        col = len(game[row])-1
+        for index in range(len(game[row])):
+                win_reverse = True
+                if index == 0:
+                        value = game[row][col]
+                else:
+                        if value != game[row+index][col-index]:
+                                win_reverse = False
+                                break
+        if win_reverse == True:
                 print("Diagonal reversed is the Winner !")
 
 get_winner()
