@@ -20,7 +20,7 @@ def win_by_row():
                                         win_horizental = False
                                         break
                 if win_horizental == True:
-                        print("row ", row+1, " : ", "is the Winner !")
+                        print("Matching row ", row+1, " : ", "is the Winner !")
 
 # Winner by columns
 def win_by_col():
@@ -34,7 +34,7 @@ def win_by_col():
                                         win_vertical = False
                                         break
                 if win_vertical == True:
-                        print("Column ", col+1, " : ", "is the Winner !")
+                        print("Matching column ", col+1, " : ", "is the Winner !")
 
 # Winner by diagonal
 def win_by_diagonal():
@@ -49,7 +49,7 @@ def win_by_diagonal():
                                 win_forward = False
                                 break
         if win_forward == True:
-                print("Diagonal forward is the Winner !")
+                print("Matching diagonal forward is the Winner !")
 
         row = 0
         col = len(game[row])-1
@@ -62,6 +62,6 @@ def win_by_diagonal():
                                 win_reverse = False
                                 break
         if win_reverse == True:
-                print("Diagonal reversed is the Winner !")
+                print("Matching diagonal reversed is the Winner !")
 
 get_winner()
