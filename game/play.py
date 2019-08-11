@@ -1,3 +1,6 @@
+from colorama import init
+from colorama import Fore, Back, Style
+
 def game_board(game_map, player=0, row=0, col=0, just_display=False):
     try:
         print("   0  1  2")
@@ -8,8 +11,10 @@ def game_board(game_map, player=0, row=0, col=0, just_display=False):
         return game_map
     except IndexError as e:
         print("Error ! make sure you input row/column as 0, 1, or 2  !", e)
+        return False
     except Exception as e:
-        print("Somthing horible !!!!")
+        print("Somthing horible !!!!", e)
+        return False
 
 
 def get_winner():
@@ -108,5 +113,10 @@ while play:
         game_won = get_winner()
         if game_won:
             print("You are winer !")
-            play = False
-            break
+            again = input("The game is over !, would you like to play again ? [y/n] : ")
+            if again.lower() == 'y':
+                print("Restarting ...")
+            else :
+                print("Byeeeeee :)")
+                play = False
+                break

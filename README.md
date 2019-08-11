@@ -10,4 +10,8 @@ Python 3.7.3
 * python3 chart_plot/start_plot.py
 
 ## Tic Tac Toe Game
-* python3 game/win.py
+* python3 game/play.py
+
+## Note
+* pip3 install --upgrade pip --user
+* pip3 install numpy
