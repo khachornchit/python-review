@@ -1,5 +1,5 @@
 """
-last-in, first-out LIFO
+LIFO : Last-in, First-out
 """
 
 stack = [3, 4, 5]

@@ -1,5 +1,5 @@
 """
-first-in, first-out FIFO
+FIFO : First-in, First-out
 """
 
 from collections import deque
