@@ -1,17 +1,21 @@
-# Python 3 Review
+# Python 3 Advance Review
+To review Python3 advance about list, templates, argparse, regular expressions, multithreading, networking, CGI programming, database interaction, C-extensions, PyCrypto, pickle, packages, and web programming.
+
+## Python Version
 Python 3.7.3
 
-## Hello World
-* git clone https://github.com/Khachornchit/Python-Quick-Start.git
-* python3 hello/hello.py
+## Overview
+* Templates
+* Argparse
+* Regular Expressions
+* Multithreading
+* Networking
+* CGI Programming
+* Database Interaction
+* C Extensions
+* PyCrypto
+* Pickle
 
-## Standard Plot Test
-* sudo pip3 install matplotlib
-* python3 chart_plot/start_plot.py
-
-## Tic Tac Toe Game
-* python3 game/play.py
-
-## Note
+## Miscellaneous
 * pip3 install --upgrade pip --user
 * pip3 install numpy
