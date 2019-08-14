@@ -1,6 +1,7 @@
 from colorama import init
 from colorama import Fore, Back, Style
 
+
 def game_board(game_map, player=0, row=0, col=0, just_display=False):
     try:
         print("   0  1  2")
@@ -17,14 +18,14 @@ def game_board(game_map, player=0, row=0, col=0, just_display=False):
         return False
 
 
-def get_winner():
-    game_won_row = win_by_row()
-    game_won_col = win_by_col()
-    game_won_diag = win_by_diagonal()
+def get_winner(game):
+    game_won_row = win_by_row(game)
+    game_won_col = win_by_col(game)
+    game_won_diag = win_by_diagonal(game)
     return game_won_row or game_won_col or game_won_diag
 
 
-def win_by_row():
+def win_by_row(game):
     for row in range(len(game)):
         row_data = game[row]
         win_horizental = False
@@ -42,7 +43,7 @@ def win_by_row():
             return False
 
 
-def win_by_col():
+def win_by_col(game):
     for col in range(len(game[0])):
         for row in range(len(game)):
             win_vertical = False
@@ -59,7 +60,7 @@ def win_by_col():
             return False
 
 
-def win_by_diagonal():
+def win_by_diagonal(game):
     row = 0
     col = 0
     for index in range(len(game)):
@@ -93,30 +94,35 @@ def win_by_diagonal():
         return False
 
 
-# Start game
-play = True
-players = [1, 2]
+def Main():
+    play = True
+    players = [1, 2]
 
-while play:
-    game = [[0, 0, 0],
-            [0, 0, 0],
-            [0, 0, 0]]
+    while play:
+        game = [[0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]]
 
-    game_won = False
-    game = game_board(game, just_display=True)
-    while not game_won:
-        current_player = 1
-        column_choice = int(input("What column ? [0, 1, 2] : "))
-        row_choice = int(input("What row? [0, 1, 2] : "))
-        game = game_board(game, current_player,
-                          row_choice, column_choice)
-        game_won = get_winner()
-        if game_won:
-            print("You are winer !")
-            again = input("The game is over !, would you like to play again ? [y/n] : ")
-            if again.lower() == 'y':
-                print("Restarting ...")
-            else :
-                print("Byeeeeee :)")
-                play = False
-                break
+        game_won = False
+        game = game_board(game, just_display=True)
+        while not game_won:
+            current_player = 1
+            column_choice = int(input("What column ? [0, 1, 2] : "))
+            row_choice = int(input("What row? [0, 1, 2] : "))
+            game = game_board(game, current_player,
+                              row_choice, column_choice)
+            game_won = get_winner(game)
+            if game_won:
+                print("You are winer !")
+                again = input(
+                    "The game is over !, would you like to play again ? [y/n] : ")
+                if again.lower() == 'y':
+                    print("Restarting ...")
+                else:
+                    print("Byeeeeee :)")
+                    play = False
+                    break
+
+
+if __name__ == '__main__':
+    Main()

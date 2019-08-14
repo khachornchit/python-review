@@ -10,7 +10,7 @@ Python 3.7.3
 * Regular Expressions
 * Multithreading
 * Networking
-* CGI Programming
+* CGI Programming (Standard for programs to interface with HTTP servers)
 * Database Interaction
 * C Extensions
 * PyCrypto
