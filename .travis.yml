@@ -1,7 +1,5 @@
 language: python
 jobs:
   include:
-    - stage: install
-      script: pip install --user colorama
     - stage: run
-      script: python game/play.py
+      script: python game/win.py
