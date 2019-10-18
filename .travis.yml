@@ -2,4 +2,4 @@ language: python
 jobs:
   include:
     - stage: run
-      script: py game/play.py
+      script: python game/play.py
