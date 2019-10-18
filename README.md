@@ -1,5 +1,7 @@
+[![Build Status](https://travis-ci.org/Khachornchit/Python3.svg?branch=master)](https://travis-ci.org/Khachornchit/Python3)
+
 # Python 3 Advance
-Python3 advance about list, templates, argparse, regular expressions, multithreading, networking, CGI programming, database interaction, C-extensions, PyCrypto, pickle, django framework, and web programming.
+For python3 advance walk-through, including list, templates, argparse, regular expressions, multithreading, networking, CGI programming, database interaction, C-extensions, PyCrypto, pickle, django framework, and web programming.
 
 ## Technology Stack
 * Python 3.7.3
