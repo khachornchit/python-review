@@ -1,9 +1,5 @@
 language: python
 jobs:
   include:
-    - stage: install pip
-      script: pip3 install --upgrade pip --user
-    - stage: install numpy
-      script: pip3 install numpy
     - stage: run
       script: py game/play.py
