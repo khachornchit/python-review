@@ -1,8 +1,9 @@
 # Python 3 Advance
 Python3 advance about list, templates, argparse, regular expressions, multithreading, networking, CGI programming, database interaction, C-extensions, PyCrypto, pickle, django framework, and web programming.
 
-## Python Version
-Python 3.7.3
+## Technology Stack
+* Python 3.7.3
+* Travis CI | CICD integration
 
 ## Overview
 * Templates
@@ -19,5 +20,7 @@ Python 3.7.3
 * Django framework
 
 ## Miscellaneous
+* pip install colorama
+* python -m pip install --upgrade pip
 * pip3 install --upgrade pip --user
 * pip3 install numpy
