@@ -5,7 +5,7 @@ For python3 advance walk-through, including list, templates, argparse, regular e
 
 ## Technology Stack
 * Python 3.7.3
-* Travis CI | CICD integration
+* CICD Integration
 
 ## Overview
 * Templates
