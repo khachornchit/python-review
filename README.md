@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Khachornchit/Python3.svg?branch=master)](https://travis-ci.org/Khachornchit/Python3)
 
-# Python Code Reviews
+# Python3 Reviews
 
 This repository contains a series of Python code examples with associated README files. Each file corresponds to a
 specific topic or feature, and the README.md provides an overview of the concepts covered.
