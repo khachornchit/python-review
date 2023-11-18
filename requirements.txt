@@ -1,3 +1,6 @@
 flask
 redis
-colorama
+colorama~=0.4.6
+numpy~=1.25.0
+matplotlib~=3.8.1
+requests~=2.31.0
