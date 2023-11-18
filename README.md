@@ -31,7 +31,7 @@ Illustrates the use of Python's `string.Template` for string templating.
 
 A simple example of a Python class and object, showcasing attributes and instantiation.
 
-## 6. [Python Advanced Concepts](advanced_concepts/README.md)
+## 6. [Python Advanced Concepts](advantage/README.md)
 
 Addresses various advanced Python concepts, including list comprehensions, Numpy usage, and more.
 
