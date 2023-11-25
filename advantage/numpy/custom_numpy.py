@@ -9,7 +9,7 @@ if __name__ == '__main__':
     a = create_custom_numpy()
     b = create_custom_numpy()
     print(a * b)
-    print('a[2:] = ', a[2:])
-    print('a[:4] = ', a[:4])
-
-    print('a[2::1] = ', a[2::1])
+    # print('a[2:] = ', a[2:])
+    # print('a[:4] = ', a[:4])
+    #
+    # print('a[2::1] = ', a[2::1])
