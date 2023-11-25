@@ -2,16 +2,16 @@ import numpy as np
 
 
 def get_consensus(chars, ss):
-    # transform ss to numpy
+    # Transform ss to numpy
     lines = np.array(ss.upper().split('\n'))
-    np1 = np.array([[*line] for line in lines])
+    np1 = np.array([list(line) for line in lines])
     rows_np1, cols_np1 = np1.shape
 
-    # define count matrix
+    # Define count matrix
     np_count = np.zeros((len(chars), cols_np1), dtype=int)
 
     for i, char in enumerate(chars):
-        char_count = np.char.count(np1, char)
+        char_count = np1 == char
         output = np.sum(char_count, axis=0)
         np_count[i] = output
 
@@ -19,21 +19,14 @@ def get_consensus(chars, ss):
 
 
 def final_output(chars, count_matrix):
-    compare_matrix = np.max(count, axis=0)
     rows, cols = count_matrix.shape
     output = []
 
-    def get_char():
-        max_index = np.argmax(col_transpose)
-        max_value = col_transpose[max_index]
-        target_index = np.where(col_transpose == max_value)
-        result = [chars[index] for index in target_index]
-        return '/'.join(result[0])
-
     for i in range(cols):
-        col = count_matrix[:, i:i + 1]
-        col_transpose = np.transpose(col)[0]
-        output.append(get_char())
+        col = count_matrix[:, i]
+        max_indices = np.where(col == np.max(col))[0]
+        result = '/'.join(chars[index] for index in max_indices)
+        output.append(result)
 
     return output
 
