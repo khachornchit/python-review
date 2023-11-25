@@ -12,8 +12,7 @@ def get_consensus(chars, ss):
 
     for i, char in enumerate(chars):
         char_count = np1 == char
-        output = np.sum(char_count, axis=0)
-        np_count[i] = output
+        np_count[i] = np.sum(char_count, axis=0)
 
     return np_count
 
@@ -33,9 +32,8 @@ def final_output(chars, count_matrix):
 
 if __name__ == '__main__':
     chars = np.array(['A', 'C', 'G', 'T'])
-    ss = "ATCGATGC\n" + "GTACaCGC\n" + "ACTACAGC\n" + "CtCAATTC\n" + "CTGgATTC"
+    # ss = "ATCGATGC\n" + "GTACaCGC\n" + "ACTACAGC\n" + "CtCAATTC\n" + "CTGgATTC"
+    ss = ("ATCGATGC\n" + "GTACaCCC\n" + "ACTACATC\n" + "CtCAATAC")
 
     count = get_consensus(chars, ss)
-    output = final_output(chars, count)
-
-    print(output)
+    print(final_output(chars, count))
