@@ -11,8 +11,7 @@ def get_consensus(chars, ss):
     np_count = np.zeros((len(chars), cols_np1), dtype=int)
 
     for i, char in enumerate(chars):
-        char_count = np1 == char
-        np_count[i] = np.sum(char_count, axis=0)
+        np_count[i] = np.sum(np1 == char, axis=0)
 
     return np_count
 
