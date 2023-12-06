@@ -1,4 +1,4 @@
-# Python3 Reviews
+# Python Reviews
 
 This repository contains a series of Python code examples with associated README files. Each file corresponds to a
 specific topic or feature, and the README.md provides an overview of the concepts covered.
@@ -31,9 +31,13 @@ Illustrates the use of Python's `string.Template` for string templating.
 
 A simple example of a Python class and object, showcasing attributes and instantiation.
 
-## 6. [Python Advanced Concepts](advantage/README.md)
+## 6. [Dictionary](advantage/dictionary/custom_dictionary.py)
 
-Addresses various advanced Python concepts, including list comprehensions, Numpy usage, and more.
+## 7. [List](advantage/list/comprehension.py)
+
+## 8. [Numpy](advantage/numpy/solving_problem_by_numpy.py)
+
+## 9. [Django](web_framework)
 
 ## Technology Stack
 
