@@ -1,7 +1,7 @@
 # Python Reviews
 
-This repository contains a series of Python code examples with associated README files. Each file corresponds to a
-specific topic or feature, and the README.md provides an overview of the concepts covered.
+This repository contains a series of Python code examples. Each file corresponds to a
+specific topic or feature, and an overview of the concepts covered.
 
 ## 1. [Multithreading with Threading Module](multithreading/README.md)
 
