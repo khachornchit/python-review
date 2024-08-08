@@ -3,13 +3,6 @@
 This repository contains a series of Python code examples with associated README files. Each file corresponds to a
 specific topic or feature, and the README.md provides an overview of the concepts covered.
 
-### Project Owner
-
-* **Name:** CHORN | Khachornchit S.
-* **Website:** https://www.chorn.in.th
-
----
-
 ## 1. [Multithreading with Threading Module](multithreading/README.md)
 
 Demonstrates the use of Python's `threading` module to create and manage threads.
